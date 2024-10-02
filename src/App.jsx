@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className='md:flex'>
+      <div className='mx-auto md:flex gap-4'>
         <Recipes></Recipes>
         <Cooking></Cooking>
       </div>

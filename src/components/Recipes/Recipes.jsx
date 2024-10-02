@@ -21,9 +21,9 @@ function Recipes() {
             <div className="w-2/3">
                 <h3>Our Recipes</h3>
                 <p>snvkdnvjsnvnvwnvonvvodnnviwnvoiwnvnvjnvvla nasnhvwhnvkjn jnvaijnvv jnjsanvads asijvnuvi vaijnanvi v avnv</p>
-                <div>
+                <div className="md:grid grid-cols-2 gap-4 mt-10">
                     {
-                        recipes.map(recipe=><Recipe recipe={recipe}></Recipe>)
+                        recipes.map(recipe=><Recipe key={recipe.id} recipe={recipe}></Recipe>)
                     }
                 </div>
             </div>
