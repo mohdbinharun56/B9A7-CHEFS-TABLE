@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
-// import { useState } from "react";
-const Cooking = ({ cooking,handlePrepare,prepareCook }) => {
+const Cooking = ({ cooking,handlePrepare,prepareCook,preparing_time,calories }) => {
     // console.log(cooking);
-    // const [prepareCook,setPrepareCook] = useState([]);
     
+
     // console.log(prepareCook)
     return (
         <>
@@ -60,6 +59,7 @@ const Cooking = ({ cooking,handlePrepare,prepareCook }) => {
                             {
                                 prepareCook.map((item,idx) => {
                                     console.log(item)
+                                    // setPreparedItem([...preparedItem,item]);
                                     return (
                                         <>
                                             <tr className="font-normal text-sm bg-[#f5f3f3] h-20">
@@ -77,6 +77,19 @@ const Cooking = ({ cooking,handlePrepare,prepareCook }) => {
                     </table>
                 </div>
 
+                <div className="w-fit ml-auto text-[#282828]">
+                    <div className="flex justify-around gap-10 mt-20"> 
+                        <h2>Total Time = </h2>
+                        <h2>Total Calories = </h2>
+                        {/* <h2>{preparedItem.length}</h2> */}
+
+                    </div>
+                    <div className="flex justify-around gap-10 mt-2"> 
+                        <h2>{preparing_time}</h2>
+                        <h2>{calories}</h2>
+                    </div>
+                </div>
+
             </div>
         </>
     );
@@ -84,6 +97,8 @@ const Cooking = ({ cooking,handlePrepare,prepareCook }) => {
 Cooking.propTypes = {
     cooking: PropTypes.array,
     handlePrepare: PropTypes.func,
-    prepareCook:PropTypes.array
+    prepareCook:PropTypes.array,
+    calories:PropTypes.number,
+    preparing_time: PropTypes.number
 }
 export default Cooking;

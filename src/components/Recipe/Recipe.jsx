@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock, faFire } from '@fortawesome/free-solid-svg-icons';
 const Recipe = ({ recipe,handleCook }) => {
     // console.log(recipe);
     const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = recipe;
@@ -18,8 +19,8 @@ const Recipe = ({ recipe,handleCook }) => {
                 </div>
                 <hr className='my-6' />
                 <div>
-                    <span className='mr-3'>{preparing_time}</span>
-                    <span>{calories}</span>
+                    <span className='mr-3'><FontAwesomeIcon icon={faClock} /> {preparing_time} minutes</span>
+                    <span><FontAwesomeIcon icon={faFire} /> {calories} calories</span>
                 </div>
 
                 <div className='mt-6'>
