@@ -9,11 +9,11 @@ const Cooking = ({ cooking }) => {
                 <div className="mt-5">
                     <table className="w-full text-[#878787]">
                         <thead>
-                            <tr className="text-center">
+                            <tr>
                                 <td></td>
                                 <td className="text-start pl-2">Name</td>
-                                <td>Time</td>
-                                <td>Calories</td>
+                                <td className="text-center pl-2">Time</td>
+                                <td className="text-end pr-2">Calories</td>
                             </tr>
                         </thead>
                         <tbody className="mt-2">
@@ -22,11 +22,15 @@ const Cooking = ({ cooking }) => {
                                         console.log(item)
                                         return (
                                             <>
-                                                <tr className="text-center font-normal text-sm">
+                                                <tr className="font-normal text-sm bg-[#dad8d8]">
+
                                                     <td>{idx+1}</td>
                                                     <td className="w-40 text-start pl-2">{item.recipe_name}</td>
-                                                    <td>{item.preparing_time}</td>
-                                                    <td>{item.calories}</td>
+                                                    <td className="text-center pl-2">{item.preparing_time}</td>
+                                                    <td className="text-end pr-2 w-28">{item.calories}</td>
+                                                    <td className="w-20">
+                                                        <button className="bg-[#0BE58A] h-10 text-[#282828] p-2 rounded-full">Preparing</button>
+                                                    </td>
                                                 </tr>
                                             </>
                                         );
