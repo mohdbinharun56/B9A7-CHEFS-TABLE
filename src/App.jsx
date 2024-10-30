@@ -1,5 +1,3 @@
-
-// import './App.css'
 import { useEffect } from "react";
 import { useState } from "react";
 import Cooking from './components/Cooking/Cooking'
@@ -29,12 +27,12 @@ function App() {
       
 
     }
-    console.log(cooking);
+    // console.log(cooking);
   return (
     <>
       <div className='mx-auto md:flex gap-4'>
         <Recipes recipes={recipes} handleCook={handleCook}></Recipes>
-        <Cooking></Cooking>
+        <Cooking cooking={cooking}></Cooking>
       </div>
     </>
   )

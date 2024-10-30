@@ -1,24 +1,7 @@
 import PropTypes from 'prop-types';
-
-// import { useEffect } from "react";
-// import { useState } from "react";
 import Recipe from "../Recipe/Recipe";
 
 const Recipes = ({recipes,handleCook})=> {
-    // const [recipes, setRecipes] = useState([]);
-
-    // useEffect(() => {
-    //     fetch('recipesData.json')
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             // console.log(data);
-    //             setRecipes(data);
-    //         });
-    // }, []);
-
-    // const handleCook = () =>{
-    //     console.log();
-    // }
 
     return (
         <>
