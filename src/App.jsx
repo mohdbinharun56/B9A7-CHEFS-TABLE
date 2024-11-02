@@ -35,14 +35,11 @@ function App() {
     const isExist = prepareCook.find(prepare => prepare.recipe_id == item.recipe_id);
     setCalories(calories+item.calories);
     setPreparing_time(preparing_time+item.preparing_time);
-    if (!isExist) {
+
+    if(isExist || !isExist){
       const [item, ...restItem] = cooking;
-      // console.log(restItem);
       setCooking(restItem);
-      setPrepareCook([...prepareCook, item]);
-    }
-    else {
-      alert('Prepared to cook is already exist');
+      setPrepareCook([...prepareCook,item]);
     }
   }
 

@@ -22,7 +22,7 @@ const Cooking = ({ cooking,handlePrepare,prepareCook,preparing_time,calories }) 
                         <tbody className="mt-2">
                             {
                                 cooking.map((item, idx) => {
-                                    console.log(item)
+                                    // console.log(item)
                                     return (
                                         <>
                                             <tr className="font-normal text-sm bg-[#f5f3f3] h-20">
@@ -58,7 +58,7 @@ const Cooking = ({ cooking,handlePrepare,prepareCook,preparing_time,calories }) 
                         <tbody className="mt-2">
                             {
                                 prepareCook.map((item,idx) => {
-                                    console.log(item)
+                                    // console.log(item)
                                     // setPreparedItem([...preparedItem,item]);
                                     return (
                                         <>
@@ -81,7 +81,6 @@ const Cooking = ({ cooking,handlePrepare,prepareCook,preparing_time,calories }) 
                     <div className="flex justify-around gap-10 mt-20"> 
                         <h2>Total Time = </h2>
                         <h2>Total Calories = </h2>
-                        {/* <h2>{preparedItem.length}</h2> */}
 
                     </div>
                     <div className="flex justify-around gap-10 mt-2"> 
