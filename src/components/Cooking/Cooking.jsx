@@ -6,7 +6,7 @@ const Cooking = ({ cooking,handlePrepare,prepareCook,preparing_time,calories }) 
     // console.log(prepareCook)
     return (
         <>
-            <div className="w-1/3 border-2 rounded-2xl p-6">
+            <div className="w-80 lg:w-1/3 border-2 rounded-2xl p-6 h-fit">
                 <h1 className="text-center font-bold text-xl mb-5">Want to cook: {cooking.length}</h1>
                 <hr />
                 <div className="mt-5">

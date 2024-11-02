@@ -45,7 +45,7 @@ function App() {
 
   return (
     <>
-      <div className='mx-auto md:flex gap-4'>
+      <div className='w-fit flex flex-col lg:flex-row gap-4'>
         <Recipes recipes={recipes} handleCook={handleCook}></Recipes>
         <Cooking cooking={cooking} prepareCook={prepareCook} handlePrepare={handlePrepare} calories={calories} preparing_time={preparing_time}></Cooking>
       </div>
