@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Cooking from './components/Cooking/Cooking'
 import Recipes from './components/Recipes/Recipes'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -23,23 +25,23 @@ function App() {
   const handleCook = (recipe) => {
     const isExist = cooking.find(item => item.recipe_id == recipe.recipe_id);
     if (!isExist) {
-
       setCooking([...cooking, recipe]);
     } else {
-      alert('This recipe is already cookig');
+      // alert('This recipe is already cookig');
+      toast("Item already exists!");
     }
   }
   // console.log(cooking);
 
   const handlePrepare = (item) => {
     const isExist = prepareCook.find(prepare => prepare.recipe_id == item.recipe_id);
-    setCalories(calories+item.calories);
-    setPreparing_time(preparing_time+item.preparing_time);
+    setCalories(calories + item.calories);
+    setPreparing_time(preparing_time + item.preparing_time);
 
-    if(isExist || !isExist){
+    if (isExist || !isExist) {
       const [item, ...restItem] = cooking;
       setCooking(restItem);
-      setPrepareCook([...prepareCook,item]);
+      setPrepareCook([...prepareCook, item]);
     }
   }
 
@@ -49,6 +51,7 @@ function App() {
         <Recipes recipes={recipes} handleCook={handleCook}></Recipes>
         <Cooking cooking={cooking} prepareCook={prepareCook} handlePrepare={handlePrepare} calories={calories} preparing_time={preparing_time}></Cooking>
       </div>
+      <div><ToastContainer></ToastContainer></div>
     </>
   )
 }
