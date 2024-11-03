@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from "./components/Header/Header";
+import Banner from "./components/Banner/Banner";
 
 function App() {
 
@@ -54,7 +55,9 @@ function App() {
       </header>
 
       <main>
-
+        <section>
+          <Banner></Banner>
+        </section>
         <div>
           <h3 className='text-center text-[#150B2B] font-bold text-4xl my-5 font-serif'>Our Recipes</h3>
           <p className='text-[#150B2B] font-normal text-sm font-sans text-center my-5 mx-auto'>Cooking with the Buchanans, Rasmussens, Widmanns, family and friends.</p>
