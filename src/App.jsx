@@ -4,6 +4,8 @@ import Cooking from './components/Cooking/Cooking'
 import Recipes from './components/Recipes/Recipes'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Header from "./components/Header/Header";
 
 function App() {
 
@@ -47,11 +49,22 @@ function App() {
 
   return (
     <>
-      <div className='w-fit flex flex-col lg:flex-row gap-4'>
-        <Recipes recipes={recipes} handleCook={handleCook}></Recipes>
-        <Cooking cooking={cooking} prepareCook={prepareCook} handlePrepare={handlePrepare} calories={calories} preparing_time={preparing_time}></Cooking>
-      </div>
-      <div><ToastContainer></ToastContainer></div>
+      <header>
+        <Header></Header>
+      </header>
+
+      <main>
+
+        <div>
+          <h3 className='text-center text-[#150B2B] font-bold text-4xl my-5 font-serif'>Our Recipes</h3>
+          <p className='text-[#150B2B] font-normal text-sm font-sans text-center my-5 mx-auto'>Cooking with the Buchanans, Rasmussens, Widmanns, family and friends.</p>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-4 my-10">
+          <Recipes recipes={recipes} handleCook={handleCook}></Recipes>
+          <Cooking cooking={cooking} prepareCook={prepareCook} handlePrepare={handlePrepare} calories={calories} preparing_time={preparing_time}></Cooking>
+        </div>
+        <div><ToastContainer></ToastContainer></div>
+      </main>
     </>
   )
 }

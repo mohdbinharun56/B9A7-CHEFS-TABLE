@@ -7,7 +7,8 @@
 
 body{
     max-width: 1320px;
-    margin: 148px 140px;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Lexend', sans-serif;
 }
 
