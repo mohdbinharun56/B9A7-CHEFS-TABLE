@@ -1,7 +1,7 @@
 const Banner = () => {
     return (
         <>
-            <div className="bg-[url('assets/Rectangle1.png')] bg-no-repeat bg-cover h-[600px] md:h-screen rounded-3xl my-20">
+            <div className="bg-[url('https://i.ibb.co.com/3cCDdXy/Rectangle1.png')] bg-no-repeat bg-cover h-[600px] md:h-screen rounded-3xl my-20">
                 <h1 className="text-white text-center mx-auto my-auto font-bold text-5xl lg:w-[800px] pt-40">Discover an exceptional cooking class tailored for you!</h1>
                 <p className="text-white text-lg font-normal text-center lg:w-[900px] mx-auto my-5">Everyday recipes with ratings and reviews by home cooks like you. Find easy dinner ideas, healthy recipes, plus helpful cooking tips and techniques.</p>
                 <div className="mx-auto w-fit">
