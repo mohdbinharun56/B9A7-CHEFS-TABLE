@@ -16,3 +16,10 @@ body{
     color: rgba(135, 135, 135, 1);
     font-family: 'Fira Sans',sans-serif;
 }
+
+/* small Device */
+@media screen and (max-width: 767px) and (min-width: 350px) {
+    #lmDevice{
+        display: none;
+    }
+}
