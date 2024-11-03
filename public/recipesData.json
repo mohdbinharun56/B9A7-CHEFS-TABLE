@@ -37,7 +37,7 @@
     },
     {
       "recipe_id": 5,
-      "recipe_image": "https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "recipe_image": "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&w=600",
       "recipe_name": "Avocado Toast",
       "short_description": "A trendy breakfast option made with mashed avocado on toast.",
       "ingredients": ["bread", "avocado", "lemon juice", "salt", "pepper", "red chili flakes"],

@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <>
             {/* large and medium device */}
-            <div id="lmDevice" className="my-10 flex gap-5 lg:gap-10 justify-around lg:justify-between items-center">
+            <div id="lmDevice" className="hidden my-10 md:flex gap-5 lg:gap-10 justify-around lg:justify-between items-center">
                 <div>
                     <h1 className="text[#150B2B] text-xl lg:text-3xl font-bold">Recipe Calories</h1>
                 </div>

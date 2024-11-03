@@ -5,9 +5,8 @@ const Recipes = ({recipes,handleCook})=> {
 
     return (
         <>
-            {/* <div className="w-2/3"> */}
-            <div className="w-2/3">
-                <div className="grid lg:grid-cols-2 gap-10 mt-10">
+            <div className="">
+                <div className="grid lg:grid-cols-2 gap-10 mt-10 w-fit mx-auto">
                     {
                         recipes.map(recipe => <Recipe key={recipe.id} recipe={recipe} handleCook={handleCook}></Recipe>)
                     }
